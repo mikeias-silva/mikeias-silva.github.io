@@ -1,0 +1,177 @@
+.teste {
+  background-color: rgb(0, 62, 133);
+  transition: all 1s;
+}
+
+.teste:hover {
+  transform: scale(1.1);
+}
+
+.fundo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("gym.jpg");
+  background-size: 100%;
+
+  background-repeat: no-repeat;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.treino {
+  padding-bottom: 50px;
+  background-color: rgb(251, 253, 255);
+}
+.call-action {
+  margin-top: 100px;
+  padding: 20px;
+  display: flex;
+}
+
+.subtitulo1 {
+  margin-top: 25px;
+  padding: 25px;
+}
+.card-shadow {
+  margin-top: 10px;
+  transition: all 0.5s;
+}
+.card-shadow:hover {
+  transform: scale(1.005);
+
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.beneficios {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.beneficio {
+  padding: 15px;
+}
+
+footer {
+  background-color: rgb(0, 34, 109);
+  width: 100%;
+  color: #fff;
+  bottom: 0;
+  margin-bottom: 0;
+  min-height: 150px;
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.valores {
+  justify-content: center;
+  display: flex;
+}
+
+.info-valores {
+  margin-top: 25px;
+}
+
+.lista-valores ul,
+footer ul {
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.btn-inscrevase span {
+  font-size: 200%;
+}
+
+.sobre-mim {
+  padding-top: 35px;
+  margin-bottom: 10px;
+  padding-bottom: 25px;
+}
+
+.sobre-mim-foto {
+  display: flex;
+  justify-content: center;
+}
+
+.content-footer {
+  padding-top: 25px;
+}
+
+.lista-valores a, .footer a {
+  list-style-type: none;
+  text-decoration: none;
+  overflow: hidden;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.lista-valores ul a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #fff;
+}
+
+.lista-valores li {
+  margin-bottom: 10px;
+}
+.content-footer-bottom {
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  /* margin: 0 auto; */
+  width: 100%;
+  font-size: 12px;
+  padding-top: 25px;
+}
+
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  padding-top: 25px;
+}
+
+.logo-footer h2 {
+  font-weight: 800;
+}
+
+.texto-footer {
+  text-align: justify;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  #items-menu {
+    display: none;
+  }
+
+  .call-action {
+    height: 940px;
+
+    position: relative;
+    display: grid;
+    justify-content: center;
+
+    align-items: center;
+    margin-top: 0;
+  }
+
+  #call-action2 {
+    justify-content: left !important;
+    flex-wrap: wrap-reverse;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+
+  .subtitulo1 {
+    text-align: center;
+  }
+
+  .footer li a{
+    font-size: 18px;
+  }
+}
