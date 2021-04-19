@@ -1,29 +1,56 @@
-.teste {
-  background-color: rgb(0, 62, 133);
-  transition: all 1s;
+.scroll-nav {
+  background-color: rgb(92, 92, 92) !important;
+  transition: all 1ms;
 }
 
-.teste:hover {
-  transform: scale(1.1);
+#ponto {
+  background-color: rgb(251, 253, 255, 0);
+}
+
+#ul-nav {
+  align-items: center;
+}
+
+.cta-btn {
+  transition: 0.3s;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.cta-btn:hover {
+  background-color: rgb(0, 80, 200);
+}
+
+.cta-btn:active {
+  background-color: rgb(0, 38, 95);
 }
 
 .fundo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("gym.jpg");
   background-size: 100%;
-
   background-repeat: no-repeat;
   padding-top: 25px;
   padding-bottom: 40px;
+  height: 800px;
 }
 
-.treino {
+#treino {
   padding-bottom: 50px;
-  background-color: rgb(251, 253, 255);
+  background-color: rgba(235, 235, 235, 0.657);
+}
+
+#valores {
+  background-color: rgba(235, 235, 235, 0.657);
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .call-action {
   margin-top: 100px;
-  padding: 20px;
+  padding-bottom: 20px;
   display: flex;
 }
 
@@ -97,7 +124,8 @@ footer ul {
   padding-top: 25px;
 }
 
-.lista-valores a, .footer a {
+.lista-valores a,
+.footer a {
   list-style-type: none;
   text-decoration: none;
   overflow: hidden;
@@ -145,16 +173,17 @@ footer ul {
 }
 
 @media screen and (max-width: 480px) {
+  .fundo {
+    background-size: 350%;
+  }
   #items-menu {
     display: none;
   }
 
   .call-action {
-    height: 940px;
+    height: 500px;
 
-    position: relative;
     display: grid;
-    justify-content: center;
 
     align-items: center;
     margin-top: 0;
@@ -171,7 +200,7 @@ footer ul {
     text-align: center;
   }
 
-  .footer li a{
+  .footer li a {
     font-size: 18px;
   }
 }
